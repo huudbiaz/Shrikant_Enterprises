@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f6f8;
+    color: #15171b;
+    line-height: 1.6;
+}
+
+section {
+    width: 100%;
+}
+
+span {
+    color: #d76b24;
+}
+
+
+.home {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+
+    padding: 80px 9%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111318 0%,
+            #1b1e24 100%
+        );
+
+    color: white;
+}
+
+
+.home-content {
+    max-width: 720px;
+}
+
+.small-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #d76b24;
+    margin-bottom: 18px;
+}
+
+
+.home h1 {
+    font-size: clamp(45px, 6vw, 82px);
+    line-height: 1.02;
+    letter-spacing: -3px;
+    margin-bottom: 28px;
+}
+
+
+.home h1 span {
+    display: block;
+}
+
+
+.home-description {
+    max-width: 620px;
+    font-size: 18px;
+    color: #c5c7cb;
+    margin-bottom: 45px;
+}
+
+
+.home-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.home-highlights div {
+    border-left: 2px solid #d76b24;
+    padding-left: 15px;
+}
+
+
+.home-highlights strong {
+    font-size: 16px;
+}
+
+
+.home-highlights p {
+    color: #999da4;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+
+
+.home-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tech-card {
+    width: 330px;
+    min-height: 370px;
+
+    padding: 40px;
+
+    border: 1px solid #3a3d43;
+
+    background:
+        linear-gradient(
+            145deg,
+            #24272e,
+            #15171b
+        );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    box-shadow: 25px 25px 0 #d76b24;
+}
+
+
+.tech-card span {
+    font-size: 55px;
+    font-weight: 800;
+    color: #555961;
+    margin-bottom: auto;
+}
+
+
+.tech-card h3 {
+    font-size: 30px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+
+.tech-card p {
+    color: #b8bbc0;
+}
+
+
+.services {
+    padding: 120px 9%;
+    background: #f5f6f8;
+}
+
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 65px;
+}
+
+
+.section-heading h2 {
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+
+.section-heading p:last-child {
+    color: #62666d;
+    max-width: 600px;
+}
+
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+.service-card {
+    background: white;
+    padding: 38px;
+
+    min-height: 430px;
+
+    border: 1px solid #e1e3e6;
+
+    position: relative;
+}
+
+
+.service-card.featured {
+    background: #17191e;
+    color: white;
+}
+
+
+.service-number {
+    font-size: 45px;
+    font-weight: 800;
+    color: #d76b24;
+    margin-bottom: 25px;
+}
+
+
+.service-card h3 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+
+.service-card p {
+    color: #6b6f76;
+    margin-bottom: 25px;
+}
+
+
+.service-card.featured p {
+    color: #bfc1c6;
+}
+
+
+.service-card ul {
+    list-style: none;
+}
+
+
+.service-card li {
+    padding: 9px 0;
+    border-bottom: 1px solid #dddfe2;
+    font-size: 14px;
+}
+
+
+.service-card.featured li {
+    border-color: #35383e;
+}
+
+
+
+.contact {
+    padding: 120px 9%;
+    background: #d76b24;
+    color: white;
+}
+
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+
+.contact .small-title {
+    color: white;
+}
+
+
+.contact h2 {
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+
+.contact h2 span {
+    color: #17191e;
+}
+
+
+.contact-intro > p:last-child {
+    max-width: 550px;
+    font-size: 17px;
+    color: #fff2e9;
+}
+
+
+.contact-details {
+    background: #17191e;
+    padding: 45px;
+}
+
+
+.contact-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #3b3d42;
+}
+
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+
+.contact-label {
+    color: #d76b24;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.contact-item h3 {
+    font-size: 23px;
+    margin-top: 4px;
+}
+
+
+
+.clients {
+    padding: 120px 9%;
+    background: #ffffff;
+}
+
+
+.client-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+.client-card {
+    padding: 40px;
+    border: 1px solid #e1e3e6;
+    min-height: 240px;
+
+    transition: transform 0.2s ease;
+}
+
+
+.client-card span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.client-card h3 {
+    font-size: 28px;
+    margin: 25px 0 10px;
+}
+
+
+.client-card p {
+    color: #666a71;
+    max-width: 520px;
+}
+
+
+footer {
+    background: #111318;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+
+.footer-logo {
+    font-size: 27px;
+    font-weight: 800;
+}
+
+
+.footer-logo span {
+    color: #d76b24;
+}
+
+
+footer p {
+    color: #8f939a;
+    margin-top: 8px;
+}
+
+
+footer .copyright {
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+
+@media (max-width: 900px) {
+
+    .home {
+        grid-template-columns: 1fr;
+        gap: 70px;
+        padding-top: 100px;
+    }
+
+    .home-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .home-box {
+        justify-content: flex-start;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .home,
+    .services,
+    .contact,
+    .clients {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .home {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .home h1 {
+        letter-spacing: -2px;
+    }
+
+    .tech-card {
+        width: 100%;
+        box-shadow: 12px 12px 0 #d76b24;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .service-card {
+        padding: 28px;
+        min-height: auto;
+    }
+
+    .client-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .client-card {
+        padding: 28px;
+    }
+
+    .contact-details {
+        padding: 28px;
+    }
+
+}
